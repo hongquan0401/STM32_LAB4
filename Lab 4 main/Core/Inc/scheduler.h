@@ -21,6 +21,12 @@ typedef struct{
 	uint32_t TaskID;
 }sTasks;
 
+typedef struct{
+	sTasks data;
+	uint8_t ID;
+	uint8_t check;
+}sNodes;
+
 void SCH_INIT(void);
 
 void SCH_Add_Task(void (*pFunction)(), uint32_t Delay, uint32_t Period);
